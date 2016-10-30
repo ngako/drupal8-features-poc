@@ -7,10 +7,11 @@ We use docker image [ngako/drupal8](https://hub.docker.com/r/ngako/drupal8) to p
 
 ## Table of Contents
 
-* [Launch your environnement](#launch-your-environnement)
-* [Mistakes](#mistakes)
+* [Running](#running)
+* [FAQs]("faqs)
+* [Know issues](#know-issues)
 
-## Launch your environnement
+## Running: how you can launch your environnement ?
 1) Clone this repository.
 ```bash
 git clone https://github.com/ngako/drupal8-features-poc.git
@@ -33,7 +34,13 @@ type:
 add-local-user
 ``` 
 
-## Mistakes
+## FAQs
+1) How to enable debugging twig template ?
+
+To enable debugging twig template, you can follow [this](https://www.chapterthree.com/blog/drupal-8-theming-setting-up-theme-debugging) link.
+
+
+## Know issues
 1) You can have some errors regarding translation during installation when you select other language that english.
 
 `To evoid this. select english as language. see detail [here](http://drupal.stackexchange.com/questions/164172/problem-installing-drupal-8-in-local-the-translation-server-is-offline)`
@@ -53,4 +60,5 @@ you can solve this and follow step below:
   `Update your php.ini file and set openssl.cafile with the path of cacert.pem that you just download`
 
   3) If you receve a drupal upload image error 
+  
   `The file could not be saved because it exceeds 2 MB, the maximum allowed size for uploads.`

@@ -713,9 +713,10 @@ $settings['container_yamls'][] = __DIR__ . '/services.yml';
  *
  * Keep this code block at the end of this file to take full effect.
  */
-# if (file_exists(__DIR__ . '/settings.local.php')) {
-#   include __DIR__ . '/settings.local.php';
-# }
+if (file_exists(__DIR__ . '/settings.local.php')) {
+   include __DIR__ . '/settings.local.php';
+}
+
 $databases['default']['default'] = array (
   'database' => 'drupal8',
   'username' => 'root',
@@ -727,3 +728,6 @@ $databases['default']['default'] = array (
   'driver' => 'mysql',
 );
 $settings['install_profile'] = 'standard';
+
+//Add theme debug
+

@@ -1,0 +1,12 @@
+global-styling:
+    version: 1.x
+    css:
+        theme:
+            css/qjcfab.css: {}
+        
+default-js:
+    version: 1.x
+    js:
+        js/qjcfab.js: {}
+    dependencies:
+        - core/jquery
