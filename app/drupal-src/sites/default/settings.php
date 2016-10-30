@@ -245,7 +245,7 @@
  * @endcode
  */
 $config_directories = array(
-    CONFIG_SYNC_DIRECTORY => '/home/dev/app/config_sync_directory'
+    CONFIG_SYNC_DIRECTORY => '/home/dev/app/conf/drupal/config_sync_directory'
 );
 
 /**
@@ -727,4 +727,3 @@ $databases['default']['default'] = array (
   'driver' => 'mysql',
 );
 $settings['install_profile'] = 'standard';
-$config_directories['sync'] = 'sites/default/files/config_Ry0wldKOWYRkiqeYxw3pc3CPjJ4pFu07-hU2PuS1jg3M9H5snPqMMVxR8PatHDqgX4zp3Nz3QA/sync';
