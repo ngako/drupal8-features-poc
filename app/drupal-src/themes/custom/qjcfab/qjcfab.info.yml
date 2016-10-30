@@ -1,0 +1,18 @@
+name: qjcfab
+type: theme
+description: The principal theme of QJC.FAB website shopping
+package: qjcfab
+core: 8.x
+libraries:
+  - qjcfab/global-styling
+
+base theme: classy
+
+regions:
+  content: Content
+  sidebar_left: sidebar-left
+  sidebar_right: sidebar-right
+  header_left: header-left
+  header_right: header-right
+  footer_left: footer-left
+  footer_right: footer-right
