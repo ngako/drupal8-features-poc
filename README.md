@@ -41,7 +41,7 @@ add-local-user
 
 2) Create a Modules.
 
-3) Create a REST Webservice.
+3) Create a REST API.
 
 ## FAQs
 1) How to enable debugging twig template ?
