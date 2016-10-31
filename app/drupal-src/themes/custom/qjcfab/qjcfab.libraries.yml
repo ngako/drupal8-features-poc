@@ -2,11 +2,12 @@ global-styling:
     version: 1.x
     css:
         theme:
-            css/qjcfab.css: {}
-        
-default-js:
-    version: 1.x
+            css/qjcfab.css: { weight: -1}
+            css/foundation.min.css: { weight: -5}
+            
     js:
-        js/qjcfab.js: {}
+        js/qjcfab.js: { weight: -1}
+        js/vendor/foundation.min.js: { weight: -5}
+        
     dependencies:
         - core/jquery

@@ -44,38 +44,59 @@
 #}
 <div class="layout-container">
 
-    <header role="banner">
-        {{ page.header }}
+    <header role="banner" id="qjcfab-header" class="row">
+        <div class="large-6 columns">
+            {{ page.site_branding }}
+        </div>
+        <div class="large-4 large-offset-2 columns">
+            {{ page.site_branding_right }}
+        </div>
     </header>
 
-    <nav class="qjcfab-menu">
-        {{ page.primary_menu }}
-        {{ page.secondary_menu }}
+    <nav id="qjcfab-menu" class="row">
+        <div class="large-8 columns">
+            {{ page.primary_menu }}
+            {{ page.secondary_menu }}
+        </div>
+        <div class="large-4 columns">
+            {{ page.search_bar }}
+        </div>
     </nav>
 
-    <div id="qjcfab-breadcrumb" class="qjcfab-breadcrumb">
-      {{ page.breadcrumb }}  
+    <div class="row">
+        <div class="large-12 columns">
+            {{ page.promoted_content_top }}
+        </div>
     </div>
 
-    <main role="main">
-        <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
+    <div id="qjcfab-breadcrumb" class="row">
+        <div class="large-12 columns">
+            {{ page.breadcrumb }} 
+        </div>
+    </div>
 
-        <div class="layout-content">
-            {{ page.content }}
-        </div>{# /.layout-content #}
+    <div id="qjcfab-main-content" class="row">
+        <main role="main" id="qjcfab-main" class="large-12 columns">
+            <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
 
-        {% if not is_front and page.sidebar_second %}
-            <aside class="layout-sidebar-second" role="complementary">
-                {{ page.sidebar_second }}
-            </aside>
+            <div class="layout-content">
+                {{ page.content }}
+            </div>{# /.layout-content #}
+
+            {% if not is_front and page.sidebar_second %}
+                <aside class="layout-sidebar-second" role="complementary">
+                    {{ page.sidebar_second }}
+                </aside>
+            {% endif %}
+
+        </main>
+    </div>{# /.layout-container #}
+
+    <div class="column row">
+        {% if page.footer %}
+            <footer role="contentinfo">
+                {{ page.footer }}
+            </footer>
         {% endif %}
+    </div>
 
-    </main>
-
-    {% if page.footer %}
-        <footer role="contentinfo">
-            {{ page.footer }}
-        </footer>
-    {% endif %}
-
-</div>{# /.layout-container #}

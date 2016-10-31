@@ -5,24 +5,21 @@ package: qjcfab
 core: 8.x
 libraries:
   - qjcfab/global-styling
-  - qjcfab/default-js
 
 base theme: classy
 
-regions_hidden:
-    - sidebar_first
-    - help
-    - highlighted
+regions:
+  header: Header
+  site_branding: Site Branding
+  site_branding_right: Site Branding Right
+  primary_menu: Primary Menu
+  secondary_menu: Secondary Menu
+  search_bar: Search Bar
+  promoted_content_top: Promoted content top
+  breadcrumb: Breadcrumb
+  content: Content
+  sidebar_second: Sidebar second
+  promoted_content_bottom: Promoted Content bottom
+  footer: Footer
 
-
-#regions:
-  #content: content
-  #sidebar_left: sidebar-left
-  #sidebar_right: sidebar-right
-  #header_left: header-left
-  #header_right: header-right
-  #footer_left: footer-left
-  #footer_right: footer-right
-
-# Hidden unused regions
 
