@@ -37,9 +37,9 @@ add-local-user
 
 ## Works
 
-1) Create a QJCFAB theme base on one mockup which use framework [Foundation](http://foundation.zurb.com)
-2) Create a Modules
-3) Create a REST Webservice
+1) Create a QJCFAB theme base on one mockup which use framework [Foundation](http://foundation.zurb.com).
+2) Create a Modules.
+3) Create a REST Webservice.
 
 ## FAQs
 1) How to enable debugging twig template ?
